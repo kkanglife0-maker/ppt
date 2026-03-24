@@ -1,0 +1,37 @@
+{
+  "slide_number": 18,
+  "type": "dynamic",
+  "layout": "objects",
+  "title": "홈페이지 기술 최적화 레이어",
+  "objects": [
+    { "type": "shape", "left": 0, "top": 0, "width": 1280, "height": 12, "background_color": "#0056b3" },
+    {
+      "type": "textbox", "left": 100, "top": 60, "width": 1080, "height": 100,
+      "paragraphs": [
+        { "text": "TECHNICAL OPTIMIZATION", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { "text": "홈페이지 기술 최적화 레이어", "font_size": 42, "font_weight": 900, "color": "#111111" }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 170, "width": 1080, "height": 2, "background_color": "#EEEEEE" },
+    
+    { "type": "shape", "left": 100, "top": 220, "width": 1080, "height": 80, "background_color": "#111111", "border_radius": 8 },
+    { "type": "textbox", "left": 100, "top": 240, "width": 1080, "height": 40, "paragraphs": [{ "text": "LAYER 01: 구조화 데이터 (Schema.org) 적용", "font_size": 22, "font_weight": 700, "color": "#FFFFFF", "alignment": "center" }] },
+    
+    { "type": "shape", "left": 100, "top": 320, "width": 1080, "height": 80, "background_color": "#0056b3", "border_radius": 8 },
+    { "type": "textbox", "left": 100, "top": 340, "width": 1080, "height": 40, "paragraphs": [{ "text": "LAYER 02: AI 인용 가능 FAQ 블록 구축", "font_size": 22, "font_weight": 700, "color": "#FFFFFF", "alignment": "center" }] },
+    
+    { "type": "shape", "left": 100, "top": 420, "width": 1080, "height": 80, "background_color": "#4A90E2", "border_radius": 8 },
+    { "type": "textbox", "left": 100, "top": 440, "width": 1080, "height": 40, "paragraphs": [{ "text": "LAYER 03: 시맨틱 태그 및 본문 구조 개선", "font_size": 22, "font_weight": 700, "color": "#FFFFFF", "alignment": "center" }] },
+    
+    { "type": "textbox", "left": 100, "top": 530, "width": 1080, "height": 120, 
+      "paragraphs": [
+        { "text": "구현 세부 사항:", "font_size": 16, "font_weight": 700, "color": "#888888" },
+        { "text": "• {implementation_plan[tech_structure][0]}", "font_size": 16, "color": "#333333" },
+        { "text": "• {implementation_plan[tech_structure][1]}", "font_size": 16, "color": "#333333" },
+        { "text": "• {implementation_plan[tech_structure][2]}", "font_size": 16, "color": "#333333" }
+      ] 
+    },
+    
+    { "type": "textbox", "left": 1150, "top": 690, "width": 100, "height": 30, "paragraphs": [{ "text": "18", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

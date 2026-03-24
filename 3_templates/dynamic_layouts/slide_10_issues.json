@@ -1,0 +1,49 @@
+{
+  "slide_number": 10,
+  "type": "dynamic",
+  "layout": "objects",
+  "title": "AEO 도약을 위한 핵심 과제",
+  "objects": [
+    { "type": "shape", "left": 0, "top": 0, "width": 1280, "height": 12, "background_color": "#0056b3" },
+    {
+      "type": "textbox", "left": 100, "top": 60, "width": 1080, "height": 100,
+      "paragraphs": [
+        { "text": "KEY CHALLENGES", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { "text": "AEO 도약을 위한 핵심 과제", "font_size": 42, "font_weight": 900, "color": "#111111" }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 170, "width": 1080, "height": 2, "background_color": "#EEEEEE" },
+    
+    { "type": "shape", "left": 100, "top": 220, "width": 340, "height": 380, "background_color": "#F0F7FF", "border_color": "#0056b3", "border_radius": 16 },
+    { "type": "icon", "left": 235, "top": 250, "width": 70, "height": 70, "icon_class": "fa-cube", "color": "#0056b3", "font_size": 50 },
+    { "type": "textbox", "left": 120, "top": 340, "width": 300, "height": 240, 
+      "paragraphs": [
+        { "text": "Challenge 01", "font_size": 16, "font_weight": 700, "color": "#4A90E2", "alignment": "center" },
+        { "text": "{top_issues[0]}", "font_size": 22, "font_weight": 900, "color": "#111111", "alignment": "center" },
+        { "text": "\nAI가 인용할 수 있는 신뢰도 높은 Q&A 자산 기반을 구축해야 합니다.", "font_size": 16, "color": "#555555", "alignment": "center" }
+      ] 
+    },
+    
+    { "type": "shape", "left": 470, "top": 220, "width": 340, "height": 380, "background_color": "#F0F7FF", "border_color": "#0056b3", "border_radius": 16 },
+    { "type": "icon", "left": 605, "top": 250, "width": 70, "height": 70, "icon_class": "fa-pen-to-square", "color": "#0056b3", "font_size": 50 },
+    { "type": "textbox", "left": 490, "top": 340, "width": 300, "height": 240, 
+      "paragraphs": [
+        { "text": "Challenge 02", "font_size": 16, "font_weight": 700, "color": "#4A90E2", "alignment": "center" },
+        { "text": "{top_issues[1]}", "font_size": 22, "font_weight": 900, "color": "#111111", "alignment": "center" },
+        { "text": "\n사용자의 질문에 즉시 답하는 Answer-First 방식의 콘텐츠 개편이 필요합니다.", "font_size": 16, "color": "#555555", "alignment": "center" }
+      ] 
+    },
+    
+    { "type": "shape", "left": 840, "top": 220, "width": 340, "height": 380, "background_color": "#F0F7FF", "border_color": "#0056b3", "border_radius": 16 },
+    { "type": "icon", "left": 975, "top": 250, "width": 70, "height": 70, "icon_class": "fa-code", "color": "#0056b3", "font_size": 50 },
+    { "type": "textbox", "left": 860, "top": 340, "width": 300, "height": 240, 
+      "paragraphs": [
+        { "text": "Challenge 03", "font_size": 16, "font_weight": 700, "color": "#4A90E2", "alignment": "center" },
+        { "text": "{top_issues[2]}", "font_size": 22, "font_weight": 900, "color": "#111111", "alignment": "center" },
+        { "text": "\n검색엔진이 정보를 명확히 해석할 수 있도록 기술적 스키마를 적용해야 합니다.", "font_size": 16, "color": "#555555", "alignment": "center" }
+      ] 
+    },
+    
+    { "type": "textbox", "left": 1150, "top": 690, "width": 100, "height": 30, "paragraphs": [{ "text": "10", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

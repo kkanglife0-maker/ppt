@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide {{ slide_number }}</title>
+    <link rel="stylesheet" href="premium.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        {% block extra_css %}{% endblock %}
+    </style>
+</head>
+<body>
+    <div class="top-accent-bar"></div>
+    <div class="slide-container">
+        <header>
+            <div class="category">{% block category %}{% endblock %}</div>
+            <h1>{% block title %}{% endblock %}</h1>
+            <div class="subtitle">{% block subtitle %}{% endblock %}</div>
+            <div class="divider"></div>
+        </header>
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer>
+            <div class="footer-text">아벨 전략팀 | AEO 최적화 리포트</div>
+            <div class="slide-number">{{ slide_number }}</div>
+        </footer>
+    </div>
+</body>
+</html>

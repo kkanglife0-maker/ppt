@@ -1,0 +1,37 @@
+{
+  "slide_number": 9,
+  "type": "dynamic",
+  "layout": "objects",
+  "title": "홈페이지 AEO 기술 구조 진단",
+  "objects": [
+    { "type": "shape", "left": 0, "top": 0, "width": 1280, "height": 12, "background_color": "#0056b3" },
+    {
+      "type": "textbox", "left": 100, "top": 60, "width": 1080, "height": 100,
+      "paragraphs": [
+        { "text": "TECHNICAL DIAGNOSIS", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { "text": "홈페이지 AEO 기술 구조 진단", "font_size": 42, "font_weight": 900, "color": "#111111" }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 170, "width": 1080, "height": 2, "background_color": "#EEEEEE" },
+    
+    { "type": "shape", "left": 100, "top": 210, "width": 480, "height": 340, "background_color": "#F9FAFB", "border_color": "#DDDDDD", "border_radius": 12 },
+    { "type": "textbox", "left": 100, "top": 360, "width": 480, "height": 40, "paragraphs": [{ "text": "[홈페이지 구조 캡쳐]", "font_size": 14, "color": "#CCCCCC", "alignment": "center" }] },
+    
+    { "type": "shape", "left": 620, "top": 210, "width": 560, "height": 450, "background_color": "#FFFFFF", "border_color": "#EEEEEE", "border_radius": 12 },
+    { "type": "shape", "left": 620, "top": 210, "width": 560, "height": 50, "background_color": "#111111", "border_radius": 12 },
+    { "type": "textbox", "left": 620, "top": 220, "width": 560, "height": 30, "paragraphs": [{ "text": "구조적 분석 결과", "font_size": 18, "font_weight": 700, "color": "#FFFFFF", "alignment": "center" }] },
+    
+    { "type": "textbox", "left": 650, "top": 280, "width": 500, "height": 350, 
+      "paragraphs": [
+        { "text": "• FAQ 상태: {homepage_diagnosis[faq_status]}", "font_size": 18, "font_weight": 700, "color": "#111111" },
+        { "text": "• Schema 데이터: {homepage_diagnosis[schema_status]}", "font_size": 18, "font_weight": 700, "color": "#111111" },
+        { "text": "• 구조적 결함:", "font_size": 16, "font_weight": 700, "color": "#888888" },
+        { "text": "  - {homepage_diagnosis[ai_disadvantage][0]}", "font_size": 16, "color": "#333333" },
+        { "text": "  - {homepage_diagnosis[ai_disadvantage][1]}", "font_size": 16, "color": "#333333" },
+        { "text": "  - {homepage_diagnosis[ai_disadvantage][2]}", "font_size": 16, "color": "#333333" }
+      ] 
+    },
+    
+    { "type": "textbox", "left": 1150, "top": 690, "width": 100, "height": 30, "paragraphs": [{ "text": "9", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

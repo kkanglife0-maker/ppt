@@ -1,0 +1,46 @@
+{
+  "slide_number": 17,
+  "type": "dynamic",
+  "layout": "objects",
+  "title": "AEO 인용을 위한 FAQ 구조화 예시",
+  "objects": [
+    { "type": "shape", "left": 0, "top": 0, "width": 1280, "height": 12, "background_color": "#0056b3" },
+    {
+      "type": "textbox", "left": 100, "top": 60, "width": 1080, "height": 100,
+      "paragraphs": [
+        { "text": "FAQ TAXONOMY", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { "text": "AEO 인용을 위한 FAQ 구조화 예시", "font_size": 42, "font_weight": 900, "color": "#111111" }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 170, "width": 1080, "height": 2, "background_color": "#EEEEEE" },
+    
+    { "type": "shape", "left": 100, "top": 210, "width": 340, "height": 400, "background_color": "#F0F7FF", "border_radius": 12 },
+    { "type": "textbox", "left": 100, "top": 230, "width": 340, "height": 40, "paragraphs": [{ "text": "{faq_categories[0][category]}", "font_size": 20, "font_weight": 700, "color": "#0056b3", "alignment": "center" }] },
+    { "type": "textbox", "left": 120, "top": 290, "width": 300, "height": 300, 
+      "paragraphs": [
+        { "text": "Q. {faq_categories[0][examples][0]}", "font_size": 16, "color": "#111111" },
+        { "text": "\nQ. {faq_categories[0][examples][1]}", "font_size": 16, "color": "#111111" }
+      ] 
+    },
+    
+    { "type": "shape", "left": 470, "top": 210, "width": 340, "height": 400, "background_color": "#FFFFFF", "border_color": "#0056b3", "border_radius": 12 },
+    { "type": "textbox", "left": 470, "top": 230, "width": 340, "height": 40, "paragraphs": [{ "text": "{faq_categories[1][category]}", "font_size": 20, "font_weight": 700, "color": "#0056b3", "alignment": "center" }] },
+    { "type": "textbox", "left": 490, "top": 290, "width": 300, "height": 300, 
+      "paragraphs": [
+        { "text": "Q. {faq_categories[1][examples][0]}", "font_size": 16, "color": "#111111" },
+        { "text": "\nQ. {faq_categories[1][examples][1]}", "font_size": 16, "color": "#111111" }
+      ] 
+    },
+    
+    { "type": "shape", "left": 840, "top": 210, "width": 340, "height": 400, "background_color": "#FFFFFF", "border_color": "#0056b3", "border_radius": 12 },
+    { "type": "textbox", "left": 840, "top": 230, "width": 340, "height": 40, "paragraphs": [{ "text": "{faq_categories[2][category]}", "font_size": 20, "font_weight": 700, "color": "#0056b3", "alignment": "center" }] },
+    { "type": "textbox", "left": 860, "top": 290, "width": 300, "height": 300, 
+      "paragraphs": [
+        { "text": "Q. {faq_categories[2][examples][0]}", "font_size": 16, "color": "#111111" },
+        { "text": "\nQ. {faq_categories[2][examples][1]}", "font_size": 16, "color": "#111111" }
+      ] 
+    },
+    
+    { "type": "textbox", "left": 1150, "top": 690, "width": 100, "height": 30, "paragraphs": [{ "text": "17", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

@@ -1,0 +1,36 @@
+{% extends "base_slide.html" %}
+
+{% block category %}AEO OVERVIEW{% endblock %}
+{% block title %}AI 검색 최적화(AEO)란 무엇인가?{% endblock %}
+{% block subtitle %}검색 엔진이 '답변'을 생성할 때 우리 병원을 가장 먼저 인용하도록 만드는 기술{% endblock %}
+
+{% block content %}
+<div style="display: flex; gap: 40px; align-items: center; margin-top: 20px;">
+    <div style="flex: 1; padding-right: 40px;">
+        <h3 style="font-size: 24px; margin-bottom: 20px; color: var(--primary);">기존 SEO vs 새로운 AEO</h3>
+        <p style="line-height: 1.8; color: #555;">
+            전통적인 SEO(검색엔진 최적화)가 검색 결과 상단에 <strong>링크</strong>를 거는 경쟁이었다면, 
+            AEO(AI 검색 최적화)는 AI의 <strong>답변 문장</strong> 내에 우리 정보가 포함되게 하는 과정입니다.
+        </p>
+        <ul style="margin-top: 20px; list-style: none; padding: 0;">
+            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-check-circle" style="color: var(--primary);"></i>
+                <span>질문 의도(User Intent) 기반 콘텐츠 설계</span>
+            </li>
+            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-check-circle" style="color: var(--primary);"></i>
+                <span>정형/비정형 데이터의 구조화(Schema.org)</span>
+            </li>
+            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-check-circle" style="color: var(--primary);"></i>
+                <span>권위 있는 답변 자산 구축 (E-E-A-T)</span>
+            </li>
+        </ul>
+    </div>
+    <div style="flex: 1; background: var(--primary-light); border-radius: 12px; padding: 40px; text-align: center;">
+        <i class="fa-solid fa-robot" style="font-size: 80px; color: var(--primary); margin-bottom: 20px;"></i>
+        <div style="font-size: 28px; font-weight: 900; color: var(--primary); margin-bottom: 10px;">The Future of Search</div>
+        <p style="color: #666;">AI는 이제 단순히 정보를 찾는 도구가 아니라<br>직접 '의사소통'하는 인터페이스로 변모했습니다.</p>
+    </div>
+</div>
+{% endblock %}

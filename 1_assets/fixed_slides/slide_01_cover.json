@@ -1,0 +1,51 @@
+{
+  "slide_number": 1,
+  "type": "fixed",
+  "layout": "objects",
+  "title": "{hospital_name} 마케팅 진단 보고서",
+  "objects": [
+    { "type": "shape", "left": 880, "top": 0, "width": 400, "height": 720, "background_color": "#F7F9FC", "z_index": 1 },
+    { "type": "shape", "left": 880, "top": 0, "width": 4, "height": 720, "background_color": "#E1EDFE", "z_index": 2 },
+    { "type": "shape", "left": 100, "top": 120, "width": 60, "height": 6, "background_color": "#0056b3", "z_index": 5 },
+    {
+      "type": "textbox", "left": 100, "top": 150, "width": 700, "height": 40,
+      "paragraphs": [{ "text": "THE LOCAL STANDARD", "font_size": 18, "font_weight": 700, "color": "#0056b3" }]
+    },
+    {
+      "type": "textbox", "left": 100, "top": 210, "width": 750, "height": 350,
+      "paragraphs": [
+        { "text": "{hospital_name}", "font_size": 82, "font_weight": 900, "color": "#111111" },
+        { 
+          "text": "AI·네이버 통합 마케팅\n진단 및 처방전 (수정안)", 
+          "font_size": 48, "font_weight": 300, "color": "#333333",
+          "highlights": [
+            { "text": "진단 및 처방전", "font_weight": 700 },
+            { "text": "(수정안)", "font_size": 32, "color": "#888888" }
+          ]
+        }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 580, "width": 700, "height": 1, "background_color": "#DDDDDD" },
+    {
+      "type": "textbox", "left": 100, "top": 610, "width": 300, "height": 80,
+      "paragraphs": [
+        { "text": "Presented by", "font_size": 14, "color": "#888888", "font_weight": 500 },
+        { "text": "아벨 전략팀", "font_size": 20, "color": "#111111", "font_weight": 700 }
+      ]
+    },
+    {
+      "type": "textbox", "left": 400, "top": 610, "width": 300, "height": 80,
+      "paragraphs": [
+        { "text": "Date", "font_size": 14, "color": "#888888", "font_weight": 500 },
+        { "text": "2026. 03", "font_size": 20, "color": "#111111", "font_weight": 700 }
+      ]
+    },
+    { "type": "icon", "left": 950, "top": 250, "width": 260, "height": 260, "icon_class": "fa-chart-pie", "color": "#0056b3", "font_size": 80 },
+    {
+      "type": "textbox", "left": 930, "top": 550, "width": 300, "height": 60,
+      "paragraphs": [
+        { "text": "Strategic Analysis\nfor Medical Marketing", "font_size": 14, "color": "#666666", "alignment": "center" }
+      ]
+    }
+  ]
+}

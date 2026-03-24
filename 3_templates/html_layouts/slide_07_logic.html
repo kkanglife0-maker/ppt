@@ -1,0 +1,35 @@
+{% extends "base_slide.html" %}
+
+{% block category %}AI LOGIC ANALYSIS{% endblock %}
+{% block title %}AI의 병원 선택 및 추천 로직 분석{% endblock %}
+{% block subtitle %}검색 엔진이 비뇨기과 정보를 수집하고 답변을 조합하는 메커니즘{% endblock %}
+
+{% block content %}
+<div class="grid-3" style="margin-top: 20px;">
+    <div class="card">
+        <div class="card-title" style="color: var(--primary);"><i class="fa-solid fa-database"></i> 1. 데이터 수집</div>
+        <p style="font-size: 14px; color: #555; line-height: 1.6;">
+            웹상에 흩어진 홈페이지 내용, 블로그, 리뷰, 커뮤니티 데이터를 Crawling하여 학습 데이터화 함.
+        </p>
+    </div>
+    <div class="card">
+        <div class="card-title" style="color: var(--primary);"><i class="fa-solid fa-gears"></i> 2. 의도 매칭</div>
+        <p style="font-size: 14px; color: #555; line-height: 1.6;">
+            사용자의 "가까운", "비수술", "야간" 등의 의도에 가장 부합하는 병원 속성 정보를 필터링함.
+        </p>
+    </div>
+    <div class="card">
+        <div class="card-title" style="color: var(--primary);"><i class="fa-solid fa-award"></i> 3. 공신력 검증</div>
+        <p style="font-size: 14px; color: #555; line-height: 1.6;">
+            홈페이지의 전문성 지표(E-E-A-T)를 확인하여 가장 신뢰할 만한 추천 후보 2~3곳을 선정함.
+        </p>
+    </div>
+</div>
+
+<div class="card highlight" style="margin-top: 40px;">
+    <p style="font-size: 18px; line-height: 1.6; text-align: center;">
+        <i class="fa-solid fa-exclamation-triangle" style="color: #d93025; margin-right: 10px;"></i>
+        현재 <strong>{{ hospital_name }}</strong>의 정보는 AI가 답변을 구성하기에 충분히 <span style="text-decoration: underline;">구조화되어 있지 않을 가능성</span>이 큽니다.
+    </p>
+</div>
+{% endblock %}

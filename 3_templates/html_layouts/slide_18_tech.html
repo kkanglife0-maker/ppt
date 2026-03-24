@@ -1,0 +1,39 @@
+{% extends "base_slide.html" %}
+
+{% block category %}TECHNICAL OPTIMIZATION{% endblock %}
+{% block title %}구조화 데이터(Schema Markup) 적용 계획{% endblock %}
+{% block subtitle %}검색 로봇에게 병원 정보를 정확히 전달하기 위한 기술적 태그 작업{% endblock %}
+
+{% block content %}
+<div style="display: flex; gap: 40px; margin-top: 20px;">
+    <div style="flex: 1.2;">
+        <div style="background: #282c34; color: #abb2bf; padding: 30px; border-radius: 12px; font-family: monospace; font-size: 14px; line-height: 1.5; box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);">
+            <span style="color: #c678dd;">{</span><br>
+            &nbsp;&nbsp;<span style="color: #e06c75;">"@context"</span>: <span style="color: #98c379;">"https://schema.org"</span>,<br>
+            &nbsp;&nbsp;<span style="color: #e06c75;">"@type"</span>: <span style="color: #98c379;">"Hospital"</span>,<br>
+            &nbsp;&nbsp;<span style="color: #e06c75;">"name"</span>: <span style="color: #98c379;">"{{ hospital_name }}"</span>,<br>
+            &nbsp;&nbsp;<span style="color: #e06c75;">"address"</span>: <span style="color: #c678dd;">{</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #e06c75;">"@type"</span>: <span style="color: #98c379;">"PostalAddress"</span>,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #e06c75;">"streetAddress"</span>: <span style="color: #98c379;">"{{ region }} 인근"</span><br>
+            &nbsp;&nbsp;<span style="color: #c678dd;">}</span>,<br>
+            &nbsp;&nbsp;<span style="color: #e06c75;">"medicalSpecialty"</span>: <span style="color: #98c379;">"Urology"</span><br>
+            <span style="color: #c678dd;">}</span>
+        </div>
+        <p style="margin-top: 15px; font-size: 13px; color: #888; text-align: center;">[JSON-LD 형식의 병원 구조화 데이터 예시]</p>
+    </div>
+    <div style="flex: 0.8; display: flex; flex-direction: column; gap: 20px;">
+        <div class="card">
+            <div class="card-title" style="font-size: 20px;"><i class="fa-solid fa-code"></i> 주요 적용 항목</div>
+            <ul style="font-size: 15px; color: #555; line-height: 1.8; padding-left: 20px;">
+                <li>병원 기본 정보 (LocalBusiness)</li>
+                <li>진료 과목 및 상세 서비스</li>
+                <li>환자 실제 후기 (Reviews)</li>
+                <li>자주 묻는 질문 (FAQPage)</li>
+            </ul>
+        </div>
+        <div class="card highlight">
+            <p style="font-size: 15px; font-weight: 700;">"이 코드는 사용자에게는 보이지 않지만, AI 검색 엔진에게는 병원을 이해하는 가장 강력한 증거가 됩니다."</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

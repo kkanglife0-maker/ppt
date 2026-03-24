@@ -1,0 +1,23 @@
+{% extends "base_slide.html" %}
+
+{% block category %}KEY CHALLENGES{% endblock %}
+{% block title %}{{ hospital_name }}이 직면한 3가지 핵심 과제{% endblock %}
+{% block subtitle %}현재의 검색 환경에서 내원 고객을 놓치고 있는 원인 분석{% endblock %}
+
+{% block content %}
+<div class="grid-3" style="margin-top: 20px; gap: 20px;">
+    {% for issue in key_challenges %}
+    <div class="card" style="padding: 25px;">
+        <div style="width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 900; margin-bottom: 20px;">
+            {{ loop.index }}
+        </div>
+        <div style="font-size: 20px; font-weight: 700; color: var(--primary); margin-bottom: 15px;">{{ issue.title }}</div>
+        <p style="font-size: 14px; color: #555; line-height: 1.6;">{{ issue.description }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<div style="margin-top: 40px; padding: 25px; border: 2px dashed var(--divider); border-radius: 12px; text-align: center; color: #d93025; font-weight: 700; font-size: 18px;">
+    "이러한 과제들은 단순히 '광고비' 증액만으로는 해결되지 않으며, 데이터 구조의 근본적 변화가 필요합니다."
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{
+  "slide_number": 5,
+  "type": "dynamic",
+  "layout": "objects",
+  "title": "AI 질문 테스트 2: {ai_tests[1][question_type]}",
+  "objects": [
+    { "type": "shape", "left": 0, "top": 0, "width": 1280, "height": 12, "background_color": "#0056b3" },
+    {
+      "type": "textbox", "left": 100, "top": 60, "width": 1080, "height": 100,
+      "paragraphs": [
+        { "text": "AI SEARCH TEST 02", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { "text": "{ai_tests[1][question_type]} 테스트", "font_size": 42, "font_weight": 900, "color": "#111111" }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 170, "width": 1080, "height": 2, "background_color": "#EEEEEE" },
+    { "type": "shape", "left": 100, "top": 200, "width": 700, "height": 60, "background_color": "#F0F4F8", "border_color": "#0056b3", "border_radius": 30 },
+    { "type": "icon", "left": 130, "top": 215, "width": 30, "height": 30, "icon_class": "fa-circle-question", "color": "#0056b3", "font_size": 24 },
+    { "type": "textbox", "left": 170, "top": 215, "width": 600, "height": 30, "paragraphs": [{ "text": "\"{ai_tests[1][question]}\"", "font_size": 20, "font_weight": 700, "color": "#111111" }] },
+    { "type": "shape", "left": 100, "top": 280, "width": 700, "height": 400, "background_color": "#F9FAFB", "border_color": "#DDDDDD", "border_radius": 8 },
+    { "type": "shape", "left": 830, "top": 200, "width": 350, "height": 480, "background_color": "#FFFFFF", "border_color": "#EEEEEE", "border_radius": 12 },
+    { "type": "shape", "left": 830, "top": 200, "width": 350, "height": 50, "background_color": "#0056b3", "border_radius": 12 },
+    { "type": "textbox", "left": 830, "top": 210, "width": 350, "height": 30, "paragraphs": [{ "text": "진단 결과 리포트", "font_size": 18, "font_weight": 700, "color": "#FFFFFF", "alignment": "center" }] },
+    { "type": "textbox", "left": 850, "top": 270, "width": 310, "height": 80, 
+      "paragraphs": [
+        { "text": "노출 여부", "font_size": 14, "font_weight": 700, "color": "#888888" },
+        { "text": "GPT: {ai_tests[1][gpt_result]}", "font_size": 16, "color": "#111111" },
+        { "text": "Gemini: {ai_tests[1][gemini_result]}", "font_size": 16, "color": "#111111" },
+        { "text": "Perplexity: {ai_tests[1][perplexity_result]}", "font_size": 16, "color": "#111111" }
+      ] 
+    },
+    { "type": "shape", "left": 850, "top": 400, "width": 310, "height": 1, "background_color": "#EEEEEE" },
+    { "type": "textbox", "left": 850, "top": 420, "width": 310, "height": 240, 
+      "paragraphs": [
+        { "text": "원인 분석", "font_size": 14, "font_weight": 700, "color": "#888888" },
+        { "text": "{ai_tests[1][analysis]}", "font_size": 16, "color": "#333333" }
+      ] 
+    },
+    { "type": "textbox", "left": 1150, "top": 690, "width": 100, "height": 30, "paragraphs": [{ "text": "5", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

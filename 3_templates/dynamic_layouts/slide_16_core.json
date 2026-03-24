@@ -1,0 +1,34 @@
+{
+  "slide_number": 16,
+  "type": "dynamic",
+  "layout": "objects",
+  "title": "The Core Question: 브랜드 검색 축 설정",
+  "objects": [
+    { "type": "shape", "left": 0, "top": 0, "width": 1280, "height": 12, "background_color": "#0056b3" },
+    {
+      "type": "textbox", "left": 100, "top": 60, "width": 1080, "height": 100,
+      "paragraphs": [
+        { "text": "CORE TARGET QUESTION", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { "text": "The Core Question: 브랜드 검색 축 설정", "font_size": 42, "font_weight": 900, "color": "#111111" }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 170, "width": 1080, "height": 2, "background_color": "#EEEEEE" },
+    
+    { "type": "shape", "left": 100, "top": 250, "width": 1080, "height": 140, "background_color": "#0056b3", "border_radius": 70 },
+    { "type": "icon", "left": 160, "top": 285, "width": 70, "height": 70, "icon_class": "fa-quote-left", "color": "#FFFFFF", "font_size": 40 },
+    { "type": "textbox", "left": 250, "top": 280, "width": 800, "height": 80, 
+      "paragraphs": [{ "text": "\"{core_question[question]}\"", "font_size": 28, "font_weight": 900, "color": "#FFFFFF", "alignment": "center" }] 
+    },
+    
+    { "type": "textbox", "left": 100, "top": 440, "width": 1080, "height": 200, 
+      "paragraphs": [
+        { "text": "Why this question?", "font_size": 20, "font_weight": 700, "color": "#111111" },
+        { "text": "• {core_question[why_this_question][0]}", "font_size": 18, "color": "#555555" },
+        { "text": "• {core_question[why_this_question][1]}", "font_size": 18, "color": "#555555" },
+        { "text": "• {core_question[why_this_question][2]}", "font_size": 18, "color": "#555555" }
+      ] 
+    },
+    
+    { "type": "textbox", "left": 1150, "top": 690, "width": 100, "height": 30, "paragraphs": [{ "text": "16", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

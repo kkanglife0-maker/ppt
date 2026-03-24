@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --primary: #0056b3;
+    --primary-light: #F0F7FF;
+    --text-main: #111111;
+    --text-sub: #444444;
+    --text-muted: #888888;
+    --divider: #EEEEEE;
+    --bg-light: #F9FAFB;
+    --white: #FFFFFF;
+    --radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1280px;
+    height: 720px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--text-main);
+    background-color: var(--white);
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-container {
+    width: 100%;
+    height: 100%;
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.top-accent-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-color: var(--primary);
+    z-index: 5;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.category {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-sub);
+    letter-spacing: -0.5px;
+}
+
+.divider {
+    width: 1080px;
+    height: 2px;
+    background-color: var(--divider);
+    margin: 20px 0;
+}
+
+/* Base Layouts for Dynamic Slides */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--divider);
+    border-radius: var(--radius);
+    padding: 30px;
+    position: relative;
+}
+
+.card.highlight {
+    background: var(--primary-light);
+    border-color: #D6E6FA;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.analysis-box {
+    margin-top: 30px;
+    background: var(--primary);
+    color: white;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+    right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.slide-number {
+    font-weight: 400;
+    color: var(--text-muted);
+}

@@ -1,0 +1,51 @@
+{
+  "slide_number": 3,
+  "type": "dynamic",
+  "layout": "objects",
+  "title": "AEO 현재 인식 상태 종합 진단",
+  "objects": [
+    { "type": "shape", "left": 0, "top": 0, "width": 1280, "height": 12, "background_color": "#0056b3" },
+    {
+      "type": "textbox", "left": 100, "top": 60, "width": 1080, "height": 100,
+      "paragraphs": [
+        { "text": "CURRENT AEO STATUS", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { "text": "AEO 현재 인식 상태 종합 진단", "font_size": 42, "font_weight": 900, "color": "#111111" }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 170, "width": 1080, "height": 2, "background_color": "#EEEEEE" },
+    
+    { "type": "shape", "left": 100, "top": 200, "width": 340, "height": 200, "background_color": "#F0F7FF", "border_color": "#0056b3", "border_radius": 12 },
+    { "type": "icon", "left": 120, "top": 220, "width": 40, "height": 40, "icon_class": "fa-robot", "color": "#0056b3", "font_size": 32 },
+    { "type": "textbox", "left": 170, "top": 225, "width": 250, "height": 40, "paragraphs": [{ "text": "ChatGPT (GPT-4o)", "font_size": 20, "font_weight": 700, "color": "#111111" }] },
+    { "type": "textbox", "left": 120, "top": 280, "width": 300, "height": 100, "paragraphs": [{ "text": "추천 후보 노출: {ai_tests[0][gpt_result]}", "font_size": 18, "color": "#333333" }, { "text": "상세 답변 인용: 미흡", "font_size": 16, "color": "#666666" }] },
+    
+    { "type": "shape", "left": 470, "top": 200, "width": 340, "height": 200, "background_color": "#F9FAFB", "border_color": "#DDDDDD", "border_radius": 12 },
+    { "type": "icon", "left": 490, "top": 220, "width": 40, "height": 40, "icon_class": "fa-google", "color": "#4285F4", "font_size": 32 },
+    { "type": "textbox", "left": 540, "top": 225, "width": 250, "height": 40, "paragraphs": [{ "text": "Gemini 1.5", "font_size": 20, "font_weight": 700, "color": "#111111" }] },
+    { "type": "textbox", "left": 490, "top": 280, "width": 300, "height": 100, "paragraphs": [{ "text": "추천 후보 노출: {ai_tests[0][gemini_result]}", "font_size": 18, "color": "#333333" }, { "text": "구글맵 연동: 양호", "font_size": 16, "color": "#666666" }] },
+    
+    { "type": "shape", "left": 840, "top": 200, "width": 340, "height": 200, "background_color": "#F9FAFB", "border_color": "#DDDDDD", "border_radius": 12 },
+    { "type": "icon", "left": 860, "top": 220, "width": 40, "height": 40, "icon_class": "fa-magnifying-glass", "color": "#111111", "font_size": 32 },
+    { "type": "textbox", "left": 910, "top": 225, "width": 250, "height": 40, "paragraphs": [{ "text": "Perplexity", "font_size": 20, "font_weight": 700, "color": "#111111" }] },
+    { "type": "textbox", "left": 860, "top": 280, "width": 300, "height": 100, "paragraphs": [{ "text": "추천 후보 노출: {ai_tests[0][perplexity_result]}", "font_size": 18, "color": "#333333" }, { "text": "출처 인용: 부분 노출", "font_size": 16, "color": "#666666" }] },
+    
+    { "type": "shape", "left": 100, "top": 420, "width": 1080, "height": 140, "background_color": "#FFFFFF", "border_color": "#EEEEEE", "border_radius": 8 },
+    { "type": "shape", "left": 100, "top": 420, "width": 6, "height": 140, "background_color": "#0056b3" },
+    { "type": "textbox", "left": 130, "top": 440, "width": 1020, "height": 100, 
+      "paragraphs": [
+        { "text": "종합 진단 결과", "font_size": 20, "font_weight": 700, "color": "#0056b3" },
+        { "text": "{ai_analysis_summary[current_status]}", "font_size": 18, "color": "#333333" }
+      ] 
+    },
+    
+    { "type": "textbox", "left": 100, "top": 580, "width": 1080, "height": 80, 
+      "paragraphs": [
+        { "text": "핵심 사유", "font_size": 16, "font_weight": 700, "color": "#888888" },
+        { "text": "• {ai_analysis_summary[reason_not_visible][0]}", "font_size": 16, "color": "#333333" },
+        { "text": "• {ai_analysis_summary[reason_not_visible][1]}", "font_size": 16, "color": "#333333" }
+      ] 
+    },
+    
+    { "type": "textbox", "left": 1150, "top": 690, "width": 100, "height": 30, "paragraphs": [{ "text": "3", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

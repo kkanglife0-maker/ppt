@@ -1,0 +1,29 @@
+{
+  "slide_number": 15,
+  "type": "dynamic",
+  "layout": "objects",
+  "title": "Phase 2: AEO 해결 전략 (Proposal)",
+  "objects": [
+    { "type": "shape", "left": 0, "top": 0, "width": 1280, "height": 12, "background_color": "#0056b3" },
+    {
+      "type": "textbox", "left": 100, "top": 60, "width": 1080, "height": 100,
+      "paragraphs": [
+        { "text": "AEO STRATEGY PROPOSAL", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { "text": "Phase 2: AEO 해결 전략 개요", "font_size": 42, "font_weight": 900, "color": "#111111" }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 170, "width": 1080, "height": 2, "background_color": "#EEEEEE" },
+    
+    { "type": "shape", "left": 100, "top": 220, "width": 1080, "height": 380, "background_color": "#F9FAFB", "border": "none", "border_radius": 12 },
+    { "type": "textbox", "left": 150, "top": 260, "width": 980, "height": 320, 
+      "paragraphs": [
+        { "text": "전략 핵심 방향:", "font_size": 24, "font_weight": 700, "color": "#0056b3" },
+        { "text": "• {implementation_plan[summary][0]}", "font_size": 20, "color": "#111111" },
+        { "text": "• {implementation_plan[summary][1]}", "font_size": 20, "color": "#111111" },
+        { "text": "• {implementation_plan[summary][2]}", "font_size": 20, "color": "#111111" }
+      ] 
+    },
+    
+    { "type": "textbox", "left": 1150, "top": 690, "width": 100, "height": 30, "paragraphs": [{ "text": "15", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

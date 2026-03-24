@@ -1,0 +1,70 @@
+{
+  "slide_number": 14,
+  "type": "fixed",
+  "layout": "objects",
+  "title": "클릭 감소와 직접 인용 구조의 중요성",
+  "objects": [
+    { "type": "shape", "left": 0, "top": 0, "width": 1280, "height": 12, "background_color": "#0056b3" },
+    {
+      "type": "textbox", "left": 100, "top": 80, "width": 1080, "height": 140,
+      "paragraphs": [
+        { "text": "CLICKS VS CITATIONS", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { "text": "클릭 감소와 직접 인용 구조의 중요성", "font_size": 42, "font_weight": 900, "color": "#111111" },
+        { "text": "이제는 클릭되기 전에, 먼저 답변에 포함되어야 합니다", "font_size": 20, "font_weight": 400, "color": "#555555" }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 200, "width": 1080, "height": 2, "background_color": "#EEEEEE" },
+    
+    { "type": "textbox", "left": 100, "top": 230, "width": 500, "height": 40, "paragraphs": [{ "text": "기존 검색 구조 (Traffic)", "font_size": 20, "font_weight": 700, "color": "#555555", "alignment": "center" }] },
+    
+    { "type": "shape", "left": 130, "top": 280, "width": 440, "height": 70, "background_color": "#F5F5F5", "border_color": "#DDDDDD", "border_radius": 8 },
+    { "type": "icon", "left": 160, "top": 295, "width": 40, "height": 40, "icon_class": "fa-magnifying-glass", "color": "#888888", "font_size": 30 },
+    { "type": "textbox", "left": 210, "top": 290, "width": 330, "height": 50, "paragraphs": [{ "text": "검색결과 노출", "font_size": 18, "font_weight": 700, "color": "#555555" }] },
+    
+    { "type": "icon", "left": 335, "top": 355, "width": 30, "height": 30, "icon_class": "fa-arrow-down", "color": "#CCCCCC", "font_size": 24 },
+    
+    { "type": "shape", "left": 160, "top": 390, "width": 380, "height": 70, "background_color": "#F5F5F5", "border_color": "#DDDDDD", "border_radius": 8 },
+    { "type": "icon", "left": 190, "top": 405, "width": 40, "height": 40, "icon_class": "fa-computer-mouse", "color": "#888888", "font_size": 30 },
+    { "type": "textbox", "left": 240, "top": 400, "width": 280, "height": 50, "paragraphs": [{ "text": "클릭 유도 (CTR)", "font_size": 18, "font_weight": 700, "color": "#555555" }] },
+    
+    { "type": "icon", "left": 335, "top": 465, "width": 30, "height": 30, "icon_class": "fa-arrow-down", "color": "#CCCCCC", "font_size": 24 },
+    
+    { "type": "shape", "left": 190, "top": 500, "width": 320, "height": 70, "background_color": "#F5F5F5", "border_color": "#DDDDDD", "border_radius": 8 },
+    { "type": "icon", "left": 220, "top": 515, "width": 40, "height": 40, "icon_class": "fa-globe", "color": "#888888", "font_size": 30 },
+    { "type": "textbox", "left": 270, "top": 510, "width": 220, "height": 50, "paragraphs": [{ "text": "홈페이지 방문", "font_size": 18, "font_weight": 700, "color": "#555555" }] },
+    
+    { "type": "shape", "left": 640, "top": 240, "width": 2, "height": 330, "background_color": "#EEEEEE" },
+    
+    { "type": "textbox", "left": 680, "top": 230, "width": 500, "height": 40, "paragraphs": [{ "text": "AI 검색 구조 (Citation)", "font_size": 20, "font_weight": 700, "color": "#0056b3", "alignment": "center" }] },
+    
+    { "type": "shape", "left": 710, "top": 280, "width": 440, "height": 70, "background_color": "#E6F0FA", "border_color": "#0056b3", "border_radius": 8 },
+    { "type": "icon", "left": 740, "top": 295, "width": 40, "height": 40, "icon_class": "fa-comments", "color": "#0056b3", "font_size": 30 },
+    { "type": "textbox", "left": 790, "top": 290, "width": 330, "height": 50, "paragraphs": [{ "text": "질문 입력", "font_size": 18, "font_weight": 700, "color": "#0056b3" }] },
+    
+    { "type": "icon", "left": 915, "top": 355, "width": 30, "height": 30, "icon_class": "fa-arrow-down", "color": "#0056b3", "font_size": 24 },
+    
+    { "type": "shape", "left": 740, "top": 390, "width": 380, "height": 70, "background_color": "#0056b3", "border_color": "#0056b3", "border_radius": 8 },
+    { "type": "icon", "left": 770, "top": 405, "width": 40, "height": 40, "icon_class": "fa-wand-magic-sparkles", "color": "#FFFFFF", "font_size": 30 },
+    { "type": "textbox", "left": 820, "top": 400, "width": 280, "height": 50, "paragraphs": [{ "text": "AI 요약 및 추천", "font_size": 18, "font_weight": 700, "color": "#FFFFFF" }] },
+    
+    { "type": "icon", "left": 915, "top": 465, "width": 30, "height": 30, "icon_class": "fa-arrow-down", "color": "#0056b3", "font_size": 24 },
+    
+    { "type": "shape", "left": 770, "top": 500, "width": 320, "height": 70, "background_color": "#E6F0FA", "border_color": "#0056b3", "border_radius": 8 },
+    { "type": "icon", "left": 800, "top": 515, "width": 40, "height": 40, "icon_class": "fa-list-check", "color": "#0056b3", "font_size": 30 },
+    { "type": "textbox", "left": 850, "top": 510, "width": 220, "height": 50, "paragraphs": [{ "text": "일부 후보만 인식", "font_size": 16, "font_weight": 700, "color": "#0056b3" }, { "text": "→ 선택 검토", "font_size": 14, "font_weight": 400, "color": "#555555" }] },
+    
+    { "type": "shape", "left": 100, "top": 600, "width": 1080, "height": 80, "background_color": "#0056b3", "border_radius": 8 },
+    {
+      "type": "textbox", "left": 100, "top": 600, "width": 1080, "height": 80,
+      "paragraphs": [
+        { 
+          "text": "앞으로는 ‘클릭을 기다리는 홈페이지’가 아니라\n먼저 인용되는 홈페이지가 유리합니다", 
+          "font_size": 22, "font_weight": 500, "color": "#FFFFFF", "alignment": "center",
+          "highlights": [{ "text": "먼저 인용되는 홈페이지", "font_weight": 900, "color": "#4da3ff" }]
+        }
+      ]
+    },
+    
+    { "type": "textbox", "left": 1150, "top": 690, "width": 100, "height": 30, "paragraphs": [{ "text": "14", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

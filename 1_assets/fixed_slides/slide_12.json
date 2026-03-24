@@ -1,0 +1,95 @@
+{
+  "slide_number": 12,
+  "type": "fixed",
+  "layout": "objects",
+  "title": "한국 검색시장 변화",
+  "objects": [
+    {
+      "type": "shape",
+      "left": 0, "top": 0, "width": 1280, "height": 12,
+      "background_color": "#0056b3"
+    },
+    {
+      "type": "textbox",
+      "left": 100, "top": 80, "width": 1080, "height": 100,
+      "paragraphs": [
+        { "text": "MARKET INSIGHT", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { "text": "한국 검색시장 변화", "font_size": 42, "font_weight": 900, "color": "#111111" },
+        { "text": "한국 검색 환경도 더 이상 네이버 단일 중심으로 보기 어렵습니다", "font_size": 20, "font_weight": 400, "color": "#555555" }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 200, "width": 1080, "height": 2, "background_color": "#EEEEEE" },
+    
+    { "type": "icon", "left": 100, "top": 240, "width": 30, "height": 40, "icon_class": "fa-chart-pie", "color": "#0056b3", "font_size": 24 },
+    {
+      "type": "textbox",
+      "left": 140, "top": 240, "width": 460, "height": 40,
+      "paragraphs": [
+        { "text": "검색엔진 점유율 (2026.02)", "font_size": 24, "font_weight": 700, "color": "#111111" }
+      ]
+    },
+    
+    {
+      "type": "chart",
+      "left": 80, "top": 280, "width": 540, "height": 380,
+      "chart_type": "doughnut",
+      "data": [
+        { "name": "Google", "value": 47.17 },
+        { "name": "Naver", "value": 44.15 },
+        { "name": "Others", "value": 8.68 }
+      ]
+    },
+    
+    { "type": "shape", "left": 660, "top": 240, "width": 1, "height": 400, "background_color": "#EEEEEE" },
+    
+    { "type": "shape", "left": 720, "top": 240, "width": 460, "height": 110, "background_color": "#F9FAFB", "border": "none" },
+    { "type": "shape", "left": 720, "top": 240, "width": 6, "height": 110, "background_color": "#111111" },
+    { "type": "icon", "left": 750, "top": 275, "width": 40, "height": 40, "icon_class": "fa-arrows-rotate", "color": "#111111", "font_size": 32 },
+    {
+      "type": "textbox",
+      "left": 810, "top": 260, "width": 350, "height": 70,
+      "paragraphs": [
+        { "text": "중심축 변화", "font_size": 18, "font_weight": 700, "color": "#111111" },
+        { "text": "\"네이버만 잡으면 된다\"는 공식은 끝났습니다. 검색 유입의 중심축이 이동하고 있습니다.", "font_size": 16, "font_weight": 400, "color": "#333333" }
+      ]
+    },
+    
+    { "type": "shape", "left": 720, "top": 370, "width": 460, "height": 110, "background_color": "#F0F4F8", "border": "none" },
+    { "type": "shape", "left": 720, "top": 370, "width": 6, "height": 110, "background_color": "#0056b3" },
+    { "type": "icon", "left": 750, "top": 405, "width": 40, "height": 40, "icon_class": "fa-google", "color": "#0056b3", "font_size": 32 },
+    {
+      "type": "textbox",
+      "left": 810, "top": 390, "width": 350, "height": 70,
+      "paragraphs": [
+        { "text": "구글 대응 가치", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { 
+          "text": "구글 대응은 이제 선택이 아닌 필수 전략입니다. 병원 탐색 및 비교 과정에서 비중이 급증했습니다.", 
+          "font_size": 16, "font_weight": 400, "color": "#333333",
+          "highlights": [{ "text": "필수 전략", "font_weight": 700 }]
+        }
+      ]
+    },
+    
+    { "type": "shape", "left": 720, "top": 500, "width": 460, "height": 110, "background_color": "#FFFFFF", "border_color": "#0056b3", "border_radius": 2 },
+    { "type": "icon", "left": 750, "top": 535, "width": 40, "height": 40, "icon_class": "fa-robot", "color": "#0056b3", "font_size": 32 },
+    {
+      "type": "textbox",
+      "left": 810, "top": 520, "width": 350, "height": 70,
+      "paragraphs": [
+        { "text": "AI 검색 대응의 시작점", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { 
+          "text": "AI 검색 최적화는 구글 SEO와 맞닿아 있습니다. 홈페이지의 구조화가 그 어느 때보다 중요합니다.", 
+          "font_size": 16, "font_weight": 400, "color": "#333333",
+          "highlights": [{ "text": "구글 SEO", "font_weight": 700 }]
+        }
+      ]
+    },
+    
+    {
+      "type": "textbox",
+      "left": 100, "top": 660, "width": 600, "height": 30,
+      "paragraphs": [{ "text": "* 집계 시점: 2026년 2월 기준 (통합 검색 쿼리 점유율 추정치)", "font_size": 12, "color": "#888888" }]
+    },
+    { "type": "textbox", "left": 1150, "top": 670, "width": 100, "height": 30, "paragraphs": [{ "text": "12", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

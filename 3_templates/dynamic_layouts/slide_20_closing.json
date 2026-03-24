@@ -1,0 +1,31 @@
+{
+  "slide_number": 20,
+  "type": "dynamic",
+  "layout": "objects",
+  "title": "결론: AI 검색 시대에 앞서가는 병원",
+  "objects": [
+    { "type": "shape", "left": 0, "top": 0, "width": 1280, "height": 12, "background_color": "#0056b3" },
+    {
+      "type": "textbox", "left": 100, "top": 150, "width": 1080, "height": 100,
+      "paragraphs": [
+        { "text": "CONCLUSION", "font_size": 24, "font_weight": 700, "color": "#0056b3", "alignment": "center" },
+        { "text": "결론: AI 검색 시대에 앞서가는 {hospital_name}", "font_size": 48, "font_weight": 900, "color": "#111111", "alignment": "center" }
+      ]
+    },
+    
+    { "type": "shape", "left": 100, "top": 320, "width": 1080, "height": 180, "background_color": "#F0F7FF", "border_radius": 12 },
+    { "type": "icon", "left": 140, "top": 350, "width": 60, "height": 60, "icon_class": "fa-handshake", "color": "#0056b3", "font_size": 48 },
+    { "type": "textbox", "left": 220, "top": 340, "width": 840, "height": 140, 
+      "paragraphs": [
+        { "text": "기대 효과", "font_size": 20, "font_weight": 700, "color": "#0056b3" },
+        { "text": "• {expected_effects[0]}", "font_size": 18, "color": "#333333" },
+        { "text": "• {expected_effects[1]}", "font_size": 18, "color": "#333333" },
+        { "text": "• {expected_effects[2]}", "font_size": 18, "color": "#333333" }
+      ] 
+    },
+    
+    { "type": "textbox", "left": 100, "top": 540, "width": 1080, "height": 60, "paragraphs": [{ "text": "{closing_message}", "font_size": 22, "font_weight": 500, "color": "#666666", "alignment": "center" }] },
+    
+    { "type": "textbox", "left": 1150, "top": 690, "width": 100, "height": 30, "paragraphs": [{ "text": "20", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

@@ -1,0 +1,32 @@
+{% extends "base_slide.html" %}
+
+{% block category %}EXECUTIVE SUMMARY{% endblock %}
+{% block title %}핵심 요약: 인공지능이 병원을 기억하게 하라{% endblock %}
+{% block subtitle %}검색 패러다임의 변화에 따른 {{ hospital_name }}의 새로운 기회{% endblock %}
+
+{% block content %}
+<div class="grid-3" style="margin-top: 20px;">
+    <div class="card highlight">
+        <div class="card-title"><i class="fa-solid fa-lightbulb"></i> 핵심 과제</div>
+        <p style="font-size: 16px; line-height: 1.7; color: #333;">
+            구글 제미나이(Gemini), 챗GPT 등 AI 검색 엔진에서 <strong>{{ hospital_name }}</strong>이 신뢰할 수 있는 답변 후보군으로 우선 채택되도록 하는 것.
+        </p>
+    </div>
+    <div class="card">
+        <div class="card-title"><i class="fa-solid fa-chart-line"></i> 기대 효과</div>
+        <p style="font-size: 16px; line-height: 1.7; color: #333;">
+            클릭 유도가 힘든 '제로 클릭' 시대에 독점적 정보를 제공하여 <strong>고관여 환자군의 신뢰도</strong>를 선점하고 내원 전환율 극대화.
+        </p>
+    </div>
+    <div class="card">
+        <div class="card-title"><i class="fa-solid fa-bullseye"></i> 추진 방향</div>
+        <p style="font-size: 16px; line-height: 1.7; color: #333;">
+            홈페이지 구조화 데이터(Schemas) 최적화 및 AI의 질문 의도에 부합하는 <strong>지식 자산(Knowledge Asset)</strong> 중심의 콘텐츠 재설계.
+        </p>
+    </div>
+</div>
+
+<div class="analysis-box" style="margin-top: 50px;">
+    <p style="font-size: 20px; font-weight: 700;">"단순한 키워드 노출을 넘어, AI가 신뢰하는 병원 데이터베이스로 진화해야 합니다."</p>
+</div>
+{% endblock %}

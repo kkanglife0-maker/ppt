@@ -1,0 +1,29 @@
+{% extends "base_slide.html" %}
+
+{% block extra_css %}
+body {
+    background: linear-gradient(135deg, #0056b3 0%, #003d7e 100%);
+    color: white;
+}
+.top-accent-bar { background-color: #FFD700; }
+.slide-container { justify-content: center; align-items: center; text-align: center; padding: 0; }
+header { display: none; }
+footer { border-top: 1px solid rgba(255,255,255,0.2); }
+.cover-content { margin-top: -50px; }
+.hospital-name { font-size: 64px; font-weight: 900; margin-bottom: 20px; letter-spacing: -1px; }
+.report-title { font-size: 32px; font-weight: 500; opacity: 0.9; margin-bottom: 60px; }
+.tag { display: inline-block; padding: 8px 20px; background: rgba(255,255,255,0.1); border-radius: 30px; font-size: 18px; margin-bottom: 30px; border: 1px solid rgba(255,255,255,0.3); }
+{% endblock %}
+
+{% block content %}
+<div class="cover-content">
+    <div class="tag">AI Search Optimization Report</div>
+    <div class="hospital-name">{{ hospital_name }}</div>
+    <div class="report-title">AEO 통합 전략 제안서 v2.0</div>
+    
+    <div style="margin-top: 100px; font-size: 18px; opacity: 0.8; line-height: 1.6;">
+        발행처: 아벨 전략기획팀<br>
+        발행일: 2026. 03. 23
+    </div>
+</div>
+{% endblock %}

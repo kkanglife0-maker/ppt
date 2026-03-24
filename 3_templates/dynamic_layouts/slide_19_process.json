@@ -1,0 +1,30 @@
+{
+  "slide_number": 19,
+  "type": "dynamic",
+  "layout": "objects",
+  "title": "AEO 구축 실행 타임라인",
+  "objects": [
+    { "type": "shape", "left": 0, "top": 0, "width": 1280, "height": 12, "background_color": "#0056b3" },
+    {
+      "type": "textbox", "left": 100, "top": 60, "width": 1080, "height": 100,
+      "paragraphs": [
+        { "text": "EXECUTION TIMELINE", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { "text": "AEO 구축 실행 타임라인", "font_size": 42, "font_weight": 900, "color": "#111111" }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 170, "width": 1080, "height": 2, "background_color": "#EEEEEE" },
+    
+    { "type": "shape", "left": 100, "top": 250, "width": 1080, "height": 300, "background_color": "#F9FAFB", "border": "none", "border_radius": 12 },
+    { "type": "icon", "left": 150, "top": 350, "width": 50, "height": 50, "icon_class": "fa-magnifying-glass-chart", "color": "#0056b3", "font_size": 32 },
+    { "type": "icon", "left": 350, "top": 350, "width": 50, "height": 50, "icon_class": "fa-pen-to-square", "color": "#0056b3", "font_size": 32 },
+    { "type": "icon", "left": 550, "top": 350, "width": 50, "height": 50, "icon_class": "fa-laptop-code", "color": "#0056b3", "font_size": 32 },
+    { "type": "icon", "left": 750, "top": 350, "width": 50, "height": 50, "icon_class": "fa-server", "color": "#0056b3", "font_size": 32 },
+    { "type": "icon", "left": 950, "top": 350, "width": 50, "height": 50, "icon_class": "fa-rocket", "color": "#0056b3", "font_size": 32 },
+    
+    { "type": "shape", "left": 150, "top": 420, "width": 900, "height": 4, "background_color": "#EEEEEE" },
+    
+    { "type": "textbox", "left": 100, "top": 450, "width": 1080, "height": 50, "paragraphs": [{ "text": "{implementation_plan[process_steps][0]} → {implementation_plan[process_steps][1]} → {implementation_plan[process_steps][2]} → {implementation_plan[process_steps][3]} → {implementation_plan[process_steps][4]}", "font_size": 18, "font_weight": 700, "color": "#111111", "alignment": "center" }] },
+    
+    { "type": "textbox", "left": 1150, "top": 690, "width": 100, "height": 30, "paragraphs": [{ "text": "19", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

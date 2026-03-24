@@ -1,0 +1,42 @@
+{% extends "base_slide.html" %}
+
+{% block category %}COMPETITOR ANALYSIS{% endblock %}
+{% block title %}지역 내 경쟁 병원 AI 노출 현황{% endblock %}
+{% block subtitle %}인근 주요 비뇨기과의 검색 우위 및 AI 답변 점유율 비교{% endblock %}
+
+{% block content %}
+<table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+    <thead>
+        <tr style="background: var(--primary); color: white;">
+            <th style="padding: 20px; text-align: left; border-radius: 8px 0 0 0;">병원명</th>
+            <th style="padding: 20px;">AI 노출 빈도</th>
+            <th style="padding: 20px;">주요 강조 키워드</th>
+            <th style="padding: 20px; border-radius: 0 8px 0 0;">AEO 대응 수준</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for comp in competitor_analysis %}
+        <tr style="border-bottom: 1px solid #eee;">
+            <td style="padding: 15px; font-weight: 700;">{{ comp.name }}</td>
+            <td style="padding: 15px; text-align: center;">{{ comp.frequency }}</td>
+            <td style="padding: 15px; text-align: center; color: #666;">{{ comp.keywords }}</td>
+            <td style="padding: 15px; text-align: center;">
+                <span style="padding: 4px 12px; background: {% if comp.level == 'High' %}#e6f4ea; color: #1e8e3e{% elif comp.level == 'Medium' %}#fef7e0; color: #b06000{% else %}#fce8e6; color: #d93025{% endif %}; border-radius: 20px; font-size: 14px; font-weight: 700;">
+                    {{ comp.level }}
+                </span>
+            </td>
+        </tr>
+        {% endfor %}
+        <tr style="background: var(--primary-light); font-weight: 900;">
+            <td style="padding: 15px;">{{ hospital_name }} (현재)</td>
+            <td style="padding: 15px; text-align: center;">Low</td>
+            <td style="padding: 15px; text-align: center;">일반 진료 위주</td>
+            <td style="padding: 15px; text-align: center; color: #d93025;">준비 필요</td>
+        </tr>
+    </tbody>
+</table>
+
+<div style="margin-top: 30px; font-size: 14px; color: #888;">
+    * 챗GPT 및 구글 제미나이 멀티 페르소나 테스트 결과 기반 (2026.03 기준)
+</div>
+{% endblock %}

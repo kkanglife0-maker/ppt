@@ -1,0 +1,44 @@
+{% extends "base_slide.html" %}
+
+{% block category %}EXECUTION TIMELINE{% endblock %}
+{% block title %}프로젝트 추진 일정{% endblock %}
+{% block subtitle %}성공적인 AEO 도입을 위한 4주간의 집중 최적화 기간{% endblock %}
+
+{% block content %}
+<div style="position: relative; margin-top: 60px; height: 300px;">
+    <!-- Timeline Line -->
+    <div style="position: absolute; top: 50%; left: 0; width: 100%; height: 4px; background: var(--divider); transform: translateY(-50%);"></div>
+    
+    <!-- Steps -->
+    <div style="display: flex; justify-content: space-between; position: relative; z-index: 1;">
+        <!-- Week 1 -->
+        <div style="text-align: center; width: 200px;">
+            <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-weight: 700;">1</div>
+            <div style="font-weight: 700; margin-bottom: 10px;">기초 진단 및<br>기반 구축</div>
+            <div style="font-size: 12px; color: #888;">웹마스터 도구 최적화</div>
+        </div>
+        <!-- Week 2 -->
+        <div style="text-align: center; width: 200px;">
+            <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-weight: 700;">2</div>
+            <div style="font-weight: 700; margin-bottom: 10px;">콘텐츠 설계 및<br>FAQ 구조화</div>
+            <div style="font-size: 12px; color: #888;">핵심 로직 답변 제작</div>
+        </div>
+        <!-- Week 3 -->
+        <div style="text-align: center; width: 200px;">
+            <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-weight: 700;">3</div>
+            <div style="font-weight: 700; margin-bottom: 10px;">Schema 기술<br>태깅 작업</div>
+            <div style="font-size: 12px; color: #888;">사이트 전반 기술 적용</div>
+        </div>
+        <!-- Week 4 -->
+        <div style="text-align: center; width: 200px;">
+            <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-weight: 700;">4</div>
+            <div style="font-weight: 700; margin-bottom: 10px;">모니터링 및<br>성과 가시화</div>
+            <div style="font-size: 12px; color: #888;">최종 보고 및 유지관리</div>
+        </div>
+    </div>
+</div>
+
+<div class="analysis-box" style="margin-top: 80px;">
+    <p style="font-size: 18px;">{{ hospital_name }}의 독점적인 AI 답변 인용을 위해 전문 전략팀이 1:1로 전담합니다.</p>
+</div>
+{% endblock %}

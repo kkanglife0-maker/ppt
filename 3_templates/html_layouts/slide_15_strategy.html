@@ -1,0 +1,41 @@
+{% extends "base_slide.html" %}
+
+{% block category %}PHASE 2 STRATEGY{% endblock %}
+{% block title %}AEO 가시화 단계별 로드맵{% endblock %}
+{% block subtitle %}진단에서 실행까지, {{ hospital_name }}을 위한 맞춤형 최적화 경로{% endblock %}
+
+{% block content %}
+<div class="grid-3" style="margin-top: 20px;">
+    <div class="card">
+        <div style="font-size: 14px; color: var(--primary); font-weight: 700; margin-bottom: 10px;">STEP 01</div>
+        <div class="card-title">기반 구축</div>
+        <ul style="font-size: 14px; color: #555; line-height: 1.6; padding-left: 20px;">
+            <li>홈페이지 기술 결함 수정</li>
+            <li>Schema Markup 적용</li>
+            <li>검색 로봇 수집 최적화</li>
+        </ul>
+    </div>
+    <div class="card highlight">
+        <div style="font-size: 14px; color: var(--primary); font-weight: 700; margin-bottom: 10px;">STEP 02</div>
+        <div class="card-title">지식 자산화</div>
+        <ul style="font-size: 14px; color: #333; line-height: 1.6; padding-left: 20px;">
+            <li>질문형 콘텐츠(FAQ) 제작</li>
+            <li>Answer-first 문체 적용</li>
+            <li>비수술 특화 데이터베이스화</li>
+        </ul>
+    </div>
+    <div class="card">
+        <div style="font-size: 14px; color: var(--primary); font-weight: 700; margin-bottom: 10px;">STEP 03</div>
+        <div class="card-title">확산 및 강화</div>
+        <ul style="font-size: 14px; color: #555; line-height: 1.6; padding-left: 20px;">
+            <li>외부 채널 인용 강화</li>
+            <li>AI 검색 점유율 모니터링</li>
+            <li>지속적인 키워드 확장</li>
+        </ul>
+    </div>
+</div>
+
+<div class="analysis-box" style="margin-top: 50px;">
+    <p style="font-size: 20px; font-weight: 700;">"단기적 유입이 아닌, 장기적인 답변 점유율(SoA)을 확보하는 과정입니다."</p>
+</div>
+{% endblock %}

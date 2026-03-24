@@ -1,0 +1,32 @@
+{% extends "base_slide.html" %}
+
+{% block category %}TECHNICAL DIAGNOSIS{% endblock %}
+{% block title %}홈페이지 AEO 기술 진단 결과{% endblock %}
+{% block subtitle %}검색 로봇이 정보를 원활하게 읽어갈 수 있는 기술적 환경 평가{% endblock %}
+
+{% block content %}
+<div style="display: flex; gap: 40px; margin-top: 20px;">
+    <div style="flex: 1;">
+        <div class="card highlight" style="height: 100%;">
+            <div style="font-size: 48px; font-weight: 900; color: var(--primary); margin-bottom: 5px;">{{ homepage_diagnosis.score }}점</div>
+            <div style="font-size: 18px; font-weight: 700; margin-bottom: 25px;">종합 기술 점수</div>
+            
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 12px;"><strong>응답 속도:</strong> {{ homepage_diagnosis.speed }}</li>
+                <li style="margin-bottom: 12px;"><strong>모바일 호환성:</strong> {{ homepage_diagnosis.mobile }}</li>
+                <li style="margin-bottom: 12px;"><strong>보안(HTTPS):</strong> {{ homepage_diagnosis.security }}</li>
+            </ul>
+        </div>
+    </div>
+    <div style="flex: 1.5; display: flex; flex-direction: column; gap: 20px;">
+        <div class="card">
+            <div class="card-title" style="color: #d93025;"><i class="fa-solid fa-circle-xmark"></i> 주요 기술적 결함</div>
+            <p style="font-size: 15px; color: #555; line-height: 1.6;">{{ homepage_diagnosis.issues }}</p>
+        </div>
+        <div class="card">
+            <div class="card-title" style="color: #1e8e3e;"><i class="fa-solid fa-circle-check"></i> 최우선 개선 사항</div>
+            <p style="font-size: 15px; color: #555; line-height: 1.6;">{{ homepage_diagnosis.priority }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

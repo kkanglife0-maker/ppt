@@ -1,0 +1,50 @@
+{
+  "slide_number": 8,
+  "type": "dynamic",
+  "layout": "objects",
+  "title": "경쟁 병원 AEO 현황 비교",
+  "objects": [
+    { "type": "shape", "left": 0, "top": 0, "width": 1280, "height": 12, "background_color": "#0056b3" },
+    {
+      "type": "textbox", "left": 100, "top": 60, "width": 1080, "height": 100,
+      "paragraphs": [
+        { "text": "COMPETITIVE ANALYSIS", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { "text": "경쟁 병원 AEO 현황 비교", "font_size": 42, "font_weight": 900, "color": "#111111" }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 170, "width": 1080, "height": 2, "background_color": "#EEEEEE" },
+    
+    { "type": "shape", "left": 100, "top": 200, "width": 340, "height": 350, "background_color": "#F0F7FF", "border_color": "#0056b3", "border_radius": 12 },
+    { "type": "textbox", "left": 100, "top": 220, "width": 340, "height": 40, "paragraphs": [{ "text": "{hospital_name}", "font_size": 22, "font_weight": 900, "color": "#0056b3", "alignment": "center" }] },
+    { "type": "textbox", "left": 120, "top": 280, "width": 300, "height": 250, 
+      "paragraphs": [
+        { "text": "점유율: 낮음", "font_size": 18, "font_weight": 700, "color": "#111111" },
+        { "text": "인용 신뢰도: 보통", "font_size": 16, "color": "#666666" },
+        { "text": "특징: {ai_analysis_summary[current_status]}", "font_size": 16, "color": "#666666" }
+      ] 
+    },
+    
+    { "type": "shape", "left": 470, "top": 200, "width": 340, "height": 350, "background_color": "#F9FAFB", "border_color": "#DDDDDD", "border_radius": 12 },
+    { "type": "textbox", "left": 470, "top": 220, "width": 340, "height": 40, "paragraphs": [{ "text": "{competitor_hospitals[0][name]}", "font_size": 22, "font_weight": 700, "color": "#333333", "alignment": "center" }] },
+    { "type": "textbox", "left": 490, "top": 280, "width": 300, "height": 250, 
+      "paragraphs": [
+        { "text": "강점: {competitor_hospitals[0][strength]}", "font_size": 16, "color": "#444444" },
+        { "text": "차이점: {competitor_hospitals[0][difference]}", "font_size": 16, "color": "#666666" }
+      ] 
+    },
+    
+    { "type": "shape", "left": 840, "top": 200, "width": 340, "height": 350, "background_color": "#F9FAFB", "border_color": "#DDDDDD", "border_radius": 12 },
+    { "type": "textbox", "left": 840, "top": 220, "width": 340, "height": 40, "paragraphs": [{ "text": "{competitor_hospitals[1][name]}", "font_size": 22, "font_weight": 700, "color": "#333333", "alignment": "center" }] },
+    { "type": "textbox", "left": 860, "top": 280, "width": 300, "height": 250, 
+      "paragraphs": [
+        { "text": "강점: {competitor_hospitals[1][strength]}", "font_size": 16, "color": "#444444" },
+        { "text": "차이점: {competitor_hospitals[1][difference]}", "font_size": 16, "color": "#666666" }
+      ] 
+    },
+    
+    { "type": "shape", "left": 100, "top": 570, "width": 1080, "height": 100, "background_color": "#EEF2F6", "border": "none", "border_radius": 8 },
+    { "type": "textbox", "left": 130, "top": 590, "width": 1020, "height": 60, "paragraphs": [{ "text": "[이곳에 경쟁사 비교 캡쳐 이미지 삽입 예정]", "font_size": 14, "color": "#AAAAAA", "alignment": "center" }] },
+    
+    { "type": "textbox", "left": 1150, "top": 690, "width": 100, "height": 30, "paragraphs": [{ "text": "8", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

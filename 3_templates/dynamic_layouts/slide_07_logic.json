@@ -1,0 +1,46 @@
+{
+  "slide_number": 7,
+  "type": "dynamic",
+  "layout": "objects",
+  "title": "AI 노출 로직 심층 분석",
+  "objects": [
+    { "type": "shape", "left": 0, "top": 0, "width": 1280, "height": 12, "background_color": "#0056b3" },
+    {
+      "type": "textbox", "left": 100, "top": 60, "width": 1080, "height": 100,
+      "paragraphs": [
+        { "text": "DEEP ANALYSIS", "font_size": 18, "font_weight": 700, "color": "#0056b3" },
+        { "text": "AI 노출 로직 심층 분석", "font_size": 42, "font_weight": 900, "color": "#111111" }
+      ]
+    },
+    { "type": "shape", "left": 100, "top": 170, "width": 1080, "height": 2, "background_color": "#EEEEEE" },
+    
+    { "type": "shape", "left": 100, "top": 210, "width": 530, "height": 380, "background_color": "#F0F7FF", "border": "none", "border_radius": 12 },
+    { "type": "shape", "left": 100, "top": 210, "width": 530, "height": 60, "background_color": "#0056b3", "border_radius": 12 },
+    { "type": "icon", "left": 130, "top": 225, "width": 30, "height": 30, "icon_class": "fa-circle-check", "color": "#FFFFFF", "font_size": 22 },
+    { "type": "textbox", "left": 170, "top": 225, "width": 400, "height": 30, "paragraphs": [{ "text": "노출/인용되는 이유 (Strength)", "font_size": 20, "font_weight": 700, "color": "#FFFFFF" }] },
+    { "type": "textbox", "left": 130, "top": 290, "width": 470, "height": 280, 
+      "paragraphs": [
+        { "text": "• {ai_analysis_summary[reason_visible][0]}", "font_size": 18, "color": "#333333" },
+        { "text": "• {ai_analysis_summary[reason_visible][1]}", "font_size": 18, "color": "#333333" }
+      ] 
+    },
+    
+    { "type": "shape", "left": 650, "top": 210, "width": 530, "height": 380, "background_color": "#FFF5F5", "border": "none", "border_radius": 12 },
+    { "type": "shape", "left": 650, "top": 210, "width": 530, "height": 60, "background_color": "#E53E3E", "border_radius": 12 },
+    { "type": "icon", "left": 680, "top": 225, "width": 30, "height": 30, "icon_class": "fa-circle-xmark", "color": "#FFFFFF", "font_size": 22 },
+    { "type": "textbox", "left": 720, "top": 225, "width": 400, "height": 30, "paragraphs": [{ "text": "누락/제외되는 이유 (Weakness)", "font_size": 20, "font_weight": 700, "color": "#FFFFFF" }] },
+    { "type": "textbox", "left": 680, "top": 290, "width": 470, "height": 280, 
+      "paragraphs": [
+        { "text": "• {ai_analysis_summary[reason_not_visible][0]}", "font_size": 18, "color": "#333333" },
+        { "text": "• {ai_analysis_summary[reason_not_visible][1]}", "font_size": 18, "color": "#333333" },
+        { "text": "• {ai_analysis_summary[reason_not_visible][2]}", "font_size": 18, "color": "#333333" }
+      ] 
+    },
+    
+    { "type": "shape", "left": 100, "top": 610, "width": 1080, "height": 70, "background_color": "#F9FAFB", "border_color": "#EEEEEE", "border_radius": 6 },
+    { "type": "icon", "left": 130, "top": 630, "width": 30, "height": 30, "icon_class": "fa-lightbulb", "color": "#0056b3", "font_size": 22 },
+    { "type": "textbox", "left": 170, "top": 632, "width": 980, "height": 30, "paragraphs": [{ "text": "핵심 인사이트: {ai_analysis_summary[trust_signal][0]}", "font_size": 18, "font_weight": 500, "color": "#0056b3" }] },
+    
+    { "type": "textbox", "left": 1150, "top": 690, "width": 100, "height": 30, "paragraphs": [{ "text": "7", "font_size": 14, "color": "#111111", "alignment": "right" }] }
+  ]
+}

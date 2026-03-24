@@ -1,0 +1,29 @@
+{% extends "base_slide.html" %}
+
+{% block extra_css %}
+body {
+    background: linear-gradient(135deg, #003d7e 0%, #001a35 100%);
+    color: white;
+}
+.top-accent-bar { background-color: #FFD700; }
+.slide-container { justify-content: center; align-items: center; text-align: center; }
+header { display: none; }
+footer { border-top: 1px solid rgba(255,255,255,0.1); }
+{% endblock %}
+
+{% block content %}
+<div style="margin-top: -40px;">
+    <i class="fa-solid fa-handshake" style="font-size: 72px; color: #FFD700; margin-bottom: 40px;"></i>
+    <h2 style="font-size: 48px; font-weight: 900; margin-bottom: 20px;">경청해주셔서 감사합니다</h2>
+    <p style="font-size: 24px; opacity: 0.8; margin-bottom: 80px;">{{ hospital_name }}의 AI 검색 점유율 1위를 함께 만들어가겠습니다.</p>
+    
+    <div style="display: flex; justify-content: center; gap: 80px; font-size: 18px; opacity: 0.9;">
+        <div>
+            <i class="fa-solid fa-envelope" style="margin-right: 10px;"></i> strategy@abel.ai
+        </div>
+        <div>
+            <i class="fa-solid fa-phone" style="margin-right: 10px;"></i> 02-1234-5678
+        </div>
+    </div>
+</div>
+{% endblock %}

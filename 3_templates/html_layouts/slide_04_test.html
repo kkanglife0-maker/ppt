@@ -1,0 +1,36 @@
+{% extends "base_slide.html" %}
+
+{% block category %}AI SEARCH TEST{% endblock %}
+{% block title %}AI 검색 결과 모니터링: {{ test.question }}{% endblock %}
+{% block subtitle %}주요 AI 채널에서의 답변 생성 여부 및 브랜드 노출 현황 분석{% endblock %}
+
+{% block content %}
+<div style="display: flex; gap: 40px; height: 420px;">
+    <!-- AI Screenshot / Mobile Frame -->
+    <div style="flex: 2; position: relative; background: #333; border-radius: 20px; padding: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+        <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background: #555; border-radius: 2px; top: 15px;"></div>
+        <div style="width: 100%; height: 100%; overflow: hidden; border-radius: 12px; background: white;">
+            <img src="{{ test.screenshot }}" alt="AI Search Screenshot" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+    </div>
+
+    <!-- Analysis Details -->
+    <div style="flex: 1.5; display: flex; flex-direction: column; gap: 20px;">
+        <div class="card" style="flex: 1;">
+            <div class="card-title"><i class="fa-solid fa-magnifying-glass"></i> 검색 상황</div>
+            <p style="font-size: 15px; color: #444; line-height: 1.6;">{{ test.context }}</p>
+        </div>
+        <div class="card highlight" style="flex: 1.5;">
+            <div class="card-title"><i class="fa-solid fa-comment-dots"></i> AI 답변 특징</div>
+            <ul style="padding-left: 20px; font-size: 15px; color: #333; line-height: 1.8;">
+                {% for point in test.analysis %}
+                <li style="margin-bottom: 8px;">{{ point }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div style="padding: 15px; background: #f8f9fa; border-left: 4px solid var(--primary); font-weight: 700;">
+            진단: {{ test.status }}
+        </div>
+    </div>
+</div>
+{% endblock %}
